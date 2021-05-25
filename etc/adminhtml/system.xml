@@ -20,7 +20,7 @@
                     <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="availability" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="availability" translate="label comment" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Availability</label>
                     <source_model>Magenizr\CustomShipping\Model\Adminhtml\System\Config\Source\Availability</source_model>
                     <comment>Available in backend, frontend or both. Default: Backend / Frontend.</comment>
@@ -29,7 +29,7 @@
                     </depends>
                 </field>
                 <field id="customer" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Customer</label>
+                    <label>Customers Only</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <comment>Available for logged in customers only. Default: No.</comment>
                     <depends>
@@ -68,7 +68,7 @@
                 <field id="hide_enabled" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Hide Other Shipping Methods</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <comment>Hide other shipping methods in the frontend when "Custom Shipping" is available. Default: No.</comment>
+                    <comment>Hide other shipping methods while "Custom Shipping" is available in the frontend. Default: No.</comment>
                 </field>
                 <field id="hide_carriers" translate="label" type="multiselect" sortOrder="51" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Hide</label>
