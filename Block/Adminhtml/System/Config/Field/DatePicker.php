@@ -2,10 +2,9 @@
 /**
  * Magenizr CustomShipping
  *
- * @category    Magenizr
- * @package     Magenizr_CustomShipping
- * @copyright   Copyright (c) 2018 Magenizr (http://www.magenizr.com)
- * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @category  Magenizr
+ * @copyright Copyright (c) 2018 - 2022 Magenizr (https://agency.magenizr.com)
+ * @license   https://www.magenizr.com/license Magenizr EULA
  */
 
 namespace Magenizr\CustomShipping\Block\Adminhtml\System\Config\Field;
@@ -13,10 +12,12 @@ namespace Magenizr\CustomShipping\Block\Adminhtml\System\Config\Field;
 class DatePicker extends \Magento\Config\Block\System\Config\Form\Field
 {
 
-    const TEMPLATE_DATEPICKER = 'system/config/field/datepicker.phtml';
+    private const TEMPLATE_DATEPICKER = 'system/config/field/datepicker.phtml';
 
     /**
-     * @Override Title
+     * Set template
+     *
+     * @return mixed
      */
     protected function _prepareLayout()
     {

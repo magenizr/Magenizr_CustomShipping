@@ -2,10 +2,9 @@
 /**
  * Magenizr CustomShipping
  *
- * @category    Magenizr
- * @package     Magenizr_CustomShipping
- * @copyright   Copyright (c) 2018 Magenizr (http://www.magenizr.com)
- * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @category  Magenizr
+ * @copyright Copyright (c) 2018 - 2022 Magenizr (https://agency.magenizr.com)
+ * @license   https://www.magenizr.com/license Magenizr EULA
  */
 
 namespace Magenizr\CustomShipping\Helper;
@@ -30,7 +29,8 @@ class Config extends \Magento\Framework\App\Helper\AbstractHelper
     private $tab = 'carriers';
 
     /**
-     * Config constructor.
+     * Init Constructor
+     *
      * @param \Magento\Framework\Stdlib\DateTime\TimezoneInterface $timezone
      * @param \Magento\Customer\Model\Session $session
      * @param \Magento\Framework\App\Helper\Context $context
@@ -50,7 +50,7 @@ class Config extends \Magento\Framework\App\Helper\AbstractHelper
     /**
      * Get module configuration values from core_config_data
      *
-     * @param $setting
+     * @param string $setting
      * @return mixed
      */
     public function getConfig($setting)
@@ -68,9 +68,15 @@ class Config extends \Magento\Framework\App\Helper\AbstractHelper
      */
     public function isAvailable()
     {
-        $date_current = strtotime($this->timezone->formatDate());
-        $date_start = strtotime($this->getConfig('date_start'));
-        $date_end = strtotime($this->getConfig('date_end'));
+        $timezone = $this->timezone->getConfigTimezone();
+
+        $date_current = date_create('now', new \DateTimeZone($timezone))
+            ->getTimestamp();
+        $date_start = date_create($this->getConfig('date_start'), new \DateTimeZone($timezone))
+            ->getTimestamp();
+        $date_end = date_create($this->getConfig('date_end'), new \DateTimeZone($timezone))
+            ->getTimestamp();
+
         $frequency = $this->getConfig('frequency');
         $day = strtolower(date('D', $date_current));
 

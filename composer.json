@@ -2,7 +2,7 @@
   "name": "magenizr/magento2-customshipping",
   "description": "This Magento 2 module allows you to provide a custom shipping method in backend only, frontend only or both. With the Scheduler feature you can manage the availability automatically.",
   "type": "magento2-module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": [
     "OSL-3.0"
   ],
@@ -13,9 +13,6 @@
       "homepage": "https://www.magenizr.com"
     }
   ],
-  "require": {
-    "magento/framework": "^100|^101|^102|^103"
-  },
   "repositories": [
     {
       "type": "composer",

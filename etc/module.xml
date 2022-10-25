@@ -3,12 +3,11 @@
 /**
  * Magenizr CustomShipping
  *
- * @category    Magenizr
- * @package     Magenizr_CustomShipping
- * @copyright   Copyright (c) 2018 Magenizr (http://www.magenizr.com)
- * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @category  Magenizr
+ * @copyright Copyright (c) 2018 - 2022 Magenizr (https://agency.magenizr.com)
+ * @license   https://www.magenizr.com/license Magenizr EULA
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Magenizr_CustomShipping" setup_version="1.0.1" />
+    <module name="Magenizr_CustomShipping" />
 </config>

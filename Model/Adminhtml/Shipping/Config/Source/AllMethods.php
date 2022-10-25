@@ -2,10 +2,9 @@
 /**
  * Magenizr CustomShipping
  *
- * @category    Magenizr
- * @package     Magenizr_CustomShipping
- * @copyright   Copyright (c) 2018 Magenizr (http://www.magenizr.com)
- * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @category  Magenizr
+ * @copyright Copyright (c) 2018 - 2022 Magenizr (https://agency.magenizr.com)
+ * @license   https://www.magenizr.com/license Magenizr EULA
  */
 
 namespace Magenizr\CustomShipping\Model\Adminhtml\Shipping\Config\Source;
@@ -22,6 +21,12 @@ class AllMethods implements \Magento\Framework\Option\ArrayInterface
      */
     private $scopeConfig;
 
+    /**
+     * Init Constructor
+     *
+     * @param \Magento\Framework\App\Config $scopeConfig
+     * @param \Magento\Shipping\Model\Config $shippingConfig
+     */
     public function __construct(
         \Magento\Framework\App\Config $scopeConfig,
         \Magento\Shipping\Model\Config $shippingConfig
