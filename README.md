@@ -1,29 +1,10 @@
-# Magenizr CustomShipping
+[![Magenizr Plus](https://images2.imgbox.com/11/6b/yVOOloaA_o.gif)](https://account.magenizr.com)
+---
+
+# Custom Shipping
 This Magento 2 module allows you to provide a custom shipping method in backend only, frontend only or both. With the `Scheduler` feature you can manage the availability automatically. In the following screenshots you can see an example `Christmas Special - Fix Price` for `$9.90`.
 
 ![Magenizr CustomShipping - Backend](https://images2.imgbox.com/8a/d1/vngOHsq3_o.gif)
-
-## Installation (Composer)
-
-1. Update your composer.json `composer require "magenizr/magento2-customshipping":"1.0.2" --no-update`
-2. Install dependencies and update your composer.lock `composer update --lock`
-
-```
-./composer.json has been updated
-Loading composer repositories with package information
-Updating dependencies (including require-dev)              
-Package operations: 1 install, 0 updates, 0 removals
-  - Installing magenizr/magento2-customshipping (1.0.2): Downloading (100%)         
-Writing lock file
-Generating autoload files
-```
-
-3. Enable the module and clear static content.
-
-```
-php bin/magento module:enable Magenizr_CustomShipping --clear-static-content
-php bin/magento setup:upgrade
-```
 
 ## Installation (Composer 2)
 
@@ -74,7 +55,7 @@ php bin/magento module:enable Magenizr_CustomShipping --clear-static-content
 The functionality can be used in the backend section `Stores > Configuration > Sales > Shipping Methods > Custom Shipping`.
 
 ## Support
-If you have any issues with this extension, open an issue on [Github](https://github.com/magenizr/Magenizr_CustomShipping/issues). For a custom build, don't hesitate to contact us on [Magento Marketplace](https://marketplace.magento.com/partner/magenizr).
+If you have any issues with this extension, open an issue on [Github](https://github.com/magenizr/Magenizr_CustomShipping/issues).
 
 ## History
 ===== 1.0.2 =====
