@@ -1,5 +1,3 @@
----
-
 # Custom Shipping
 This Magento 2 module allows you to provide a custom shipping method in backend only, frontend only or both. With the `Scheduler` feature you can manage the availability automatically. In the following screenshots you can see an example `Christmas Special - Fix Price` for `$9.90`.
 
